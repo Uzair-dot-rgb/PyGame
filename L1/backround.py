@@ -12,7 +12,7 @@ def game_loop():
     running = True
     while running:
         for event in pygame.event.get():
-            if event.type == pygame.Quit:
+            if event.type == pygame.QUIT:
                 running = False
         displlay_surface.blit(background_image, (0, 0))
         displlay_surface.blit(penguin_image, (screen_width//2, screen_height//2-30))
